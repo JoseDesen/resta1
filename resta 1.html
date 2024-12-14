@@ -1,0 +1,188 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Resta 1</title>
+		<style>
+			*{
+				text-align:center;
+				}
+				
+			button{
+				width:50px;
+				height:50px;
+				background-color:white;
+				border:none;
+				}
+			#a2,#a4,#a6,#a8,#b1,#b3,#b5,#b7, #c2,#c4,#c6,#c8,#d1,#d3,#d5,#d7,#e2,#e4,#e6,#e8,#f1,#f3,#f5,#f7,#g2,#g4,#g6,#g8,#h1,#h3,#h5,#h7{
+				background-color:white;
+			}
+			img{
+				width:37px;
+				height:37px;
+				}
+			form{
+				margin-left:27.5%;
+				margin-right:27.5%;
+				background-color:white;
+				}
+.switch__container {
+  margin: 30px auto;
+  width: 120px;
+}
+
+.switch {
+  visibility: hidden;
+  position: absolute;
+  margin-left: -9999px;
+}
+
+.switch + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.switch--shadow + label {
+  padding: 2px;
+  width: 120px;
+  height: 60px;
+  background-color: #dddddd;
+  border-radius: 60px;
+}
+.switch--shadow + label:before,
+.switch--shadow + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+.switch--shadow + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+.switch--shadow + label:after {
+  width: 62px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+.switch--shadow:checked + label:before {
+  background-color: #8ce196;
+}
+.switch--shadow:checked + label:after {
+  transform: translateX(60px);
+}
+			
+		</style>
+		<script>
+		function mover(peca){
+			var bntPasso = document.getElementById("switch-shadow");
+			if(peca=="d5"){
+				if(bntPasso.checked){
+					alert("ligado");
+				}else{
+					alert("desligado");
+				}
+			}
+
+		}
+		</script>
+		
+		
+		
+		
+	</head>
+	<body bgcolor="white">
+		<h2>Resta 1</h2>
+		<div id="buraco"><br><br></div>
+		<form name="f">
+			<button type="button" id="a1" name="a1" onclick="mover('a1')"><img name="imgA1" src="buraco.png"></button>
+			<button type="button" id="a2" name="a2" onclick="mover('a2')"><img name="imgA2" src="buraco.png"></button>
+			<button type="button" id="a3" name="a3" onclick="mover('a3')"><img name="imgA3" src="buraco.png"></button>
+			<button type="button" id="a4" name="a4" onclick="mover('a4')"><img name="imgA4" src="buraco.png"></button>
+			<button type="button" id="a5" name="a5" onclick="mover('a5')"><img name="imgA5" src="buraco.png"></button>
+			<button type="button" id="a6" name="a6" onclick="mover('a6')"><img name="imgA6" src="buraco.png"></button>
+			<button type="button" id="a7" name="a7" onclick="mover('a7')"><img name="imgA7" src="buraco.png"></button>
+			<button type="button" id="a8" name="a8" onclick="mover('a8')"><img name="imgA8" src="buraco.png"></button>
+			<br>
+				
+			<button type="button" id="b1" name="b1" onclick="mover('b1')"><img name="imgB1" src="buraco.png"></button>
+			<button type="button" id="b2" name="b2" onclick="mover('b2')"><img name="imgB2" src="buraco.png"></button>
+			<button type="button" id="b3" name="b3" onclick="mover('b3')"><img name="imgB3" src="buraco.png"></button>
+			<button type="button" id="b4" name="b4" onclick="mover('b4')"><img name="imgB4" src="buraco.png"></button>
+			<button type="button" id="b5" name="b5" onclick="mover('b5')"><img name="imgB5" src="buraco.png"></button>
+			<button type="button" id="b6" name="b6" onclick="mover('b6')"><img name="imgB6" src="buraco.png"></button>
+			<button type="button" id="b7" name="b7" onclick="mover('b7')"><img name="imgB7" src="buraco.png"></button>
+			<button type="button" id="b8" name="b8" onclick="mover('b8')"><img name="imgB8" src="buraco.png"></button>
+			<br>
+			<button type="button" id="c1" name="c1" onclick="mover('c1')"><img name="imgC1" src="buraco.png"></button>
+			<button type="button" id="c2" name="c2" onclick="mover('c2')"><img name="imgC2" src="buraco.png"></button>
+			<button type="button" id="c3" name="c3" onclick="mover('c3')"><img name="imgC3" src="buraco.png"></button>
+			<button type="button" id="c4" name="c4" onclick="mover('c4')"><img name="imgC4" src="buraco.png"></button>
+			<button type="button" id="c5" name="c5" onclick="mover('c5')"><img name="imgC5" src="buraco.png"></button>
+			<button type="button" id="c6" name="c6" onclick="mover('c6')"><img name="imgC6" src="buraco.png"></button>
+			<button type="button" id="c7" name="c7" onclick="mover('c7')"><img name="imgC7" src="buraco.png"></button>
+			<button type="button" id="c8" name="c8" onclick="mover('c8')"><img name="imgC8" src="buraco.png"></button>
+			<br>
+				
+			<button type="button" id="d1" name="d1" onclick="mover('d1')"><img name="imgD1" src="buraco.png"></button>
+			<button type="button" id="d2" name="d2" onclick="mover('d2')"><img name="imgD2" src="buraco.png"></button>
+			<button type="button" id="d3" name="d3" onclick="mover('d3')"><img name="imgD3" src="buraco.png"></button>
+			<button type="button" id="d4" name="d4" onclick="mover('d4')"><img name="imgD4" src="amarelo.png"></button>
+			<button type="button" id="d5" name="d5" onclick="mover('d5')"><img name="imgD5" src="amarelo.png"></button>
+			<button type="button" id="d6" name="d6" onclick="mover('d6')"><img name="imgD6" src="buraco.png"></button>
+			<button type="button" id="d7" name="d7" onclick="mover('d7')"><img name="imgD7" src="buraco.png"></button>
+			<button type="button" id="d8" name="d8" onclick="mover('d8')"><img name="imgD8" src="buraco.png"></button>
+			<br>
+			<button type="button" id="e1" name="e1" onclick="mover('e1')"><img name="imgE1" src="buraco.png"></button>
+			<button type="button" id="e2" name="e2" onclick="mover('e2')"><img name="imgE2" src="buraco.png"></button>
+			<button type="button" id="e3" name="e3" onclick="mover('e3')"><img name="imgE3" src="buraco.png"></button>
+			<button type="button" id="e4" name="e4" onclick="mover('e4')"><img name="imgE4" src="buraco.png"></button>
+			<button type="button" id="e5" name="e5" onclick="mover('e5')"><img name="imgE5" src="buraco.png"></button>
+			<button type="button" id="e6" name="e6" onclick="mover('e6')"><img name="imgE6" src="buraco.png"></button>
+			<button type="button" id="e7" name="e7" onclick="mover('e7')"><img name="imgE7" src="buraco.png"></button>
+			<button type="button" id="e8" name="e8" onclick="mover('e8')"><img name="imgE8" src="buraco.png"></button>
+			<br>
+				
+			<button type="button" id="f1" name="f1" onclick="mover('f1')"><img name="imgF1" src="buraco.png"></button>
+			<button type="button" id="f2" name="f2" onclick="mover('f2')"><img name="imgF2" src="buraco.png"></button>
+			<button type="button" id="f3" name="f3" onclick="mover('f3')"><img name="imgF3" src="buraco.png"></button>
+			<button type="button" id="f4" name="f4" onclick="mover('f4')"><img name="imgF4" src="buraco.png"></button>
+			<button type="button" id="f5" name="f5" onclick="mover('f5')"><img name="imgF5" src="buraco.png"></button>
+			<button type="button" id="f6" name="f6" onclick="mover('f6')"><img name="imgF6" src="buraco.png"></button>
+			<button type="button" id="f7" name="f7" onclick="mover('f7')"><img name="imgF7" src="buraco.png"></button>
+			<button type="button" id="f8" name="f8" onclick="mover('f8')"><img name="imgF8" src="buraco.png"></button>
+			<br>
+			<button type="button" id="g1" name="g1" onclick="mover('g1')"><img name="imgG1" src="buraco.png"></button>
+			<button type="button" id="g2" name="g2" onclick="mover('g2')"><img name="imgG2" src="buraco.png"></button>
+			<button type="button" id="g3" name="g3" onclick="mover('g3')"><img name="imgG3" src="buraco.png"></button>
+			<button type="button" id="g4" name="g4" onclick="mover('g4')"><img name="imgG4" src="buraco.png"></button>
+			<button type="button" id="g5" name="g5" onclick="mover('g5')"><img name="imgG5" src="buraco.png"></button>
+			<button type="button" id="g6" name="g6" onclick="mover('g6')"><img name="imgG6" src="buraco.png"></button>
+			<button type="button" id="g7" name="g7" onclick="mover('g7')"><img name="imgG7" src="buraco.png"></button>
+			<button type="button" id="g8" name="g8" onclick="mover('g8')"><img name="imgG8" src="buraco.png"></button>
+			<br>
+				
+			<button type="button" id="h1" name="h1" onclick="mover('h1')"><img name="imgH1" src="buraco.png"></button>
+			<button type="button" id="h2" name="h2" onclick="mover('h2')"><img name="imgH2" src="buraco.png"></button>
+			<button type="button" id="h3" name="h3" onclick="mover('h3')"><img name="imgH3" src="buraco.png"></button>
+			<button type="button" id="h4" name="h4" onclick="mover('h4')"><img name="imgH4" src="buraco.png"></button>
+			<button type="button" id="h5" name="h5" onclick="mover('h5')"><img name="imgH5" src="buraco.png"></button>
+			<button type="button" id="h6" name="h6" onclick="mover('h6')"><img name="imgH6" src="buraco.png"></button>
+			<button type="button" id="h7" name="h7" onclick="mover('h7')"><img name="imgH7" src="buraco.png"></button>
+			<button type="button" id="h8" name="h8" onclick="mover('h8')"><img name="imgH8" src="buraco.png"></button>		
+		</form>
+		</div>
+<div class="switch__container">
+ confirmar o próximo passo:<input id="switch-shadow" class="switch switch--shadow" type="checkbox">
+  <label for="switch-shadow"></label>
+</div>
+	</body>
+</html>
