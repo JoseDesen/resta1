@@ -83,11 +83,15 @@
 		</style>
 		<script>
 		function mover(peca){
+var amarelo="https://josedesen.github.io/resta1/amarelo.png";
+var verde="https://josedesen.github.io/resta1/verde.png";
 var imgA1=document.f.imgA1.src;
 var imgA2=document.f.imgA2.src;
 			var bntPasso = document.getElementById("switch-shadow");
 			if(peca=="a1"){
 				if(bntPasso.checked){
+if(imgA2==amarelo){
+document.f.imgA3.src=verde;
 					alert(imgA2);
 				}else{
 					alert("desligado");
