@@ -157,19 +157,28 @@
 			identificador();
 			var bntPasso = document.getElementById("switch-shadow");
 			if(peca=="a1"){
-				if(bntPasso.checked){
-				if(imgA2==amarelo){
-					document.f.imgA3.src=verde;
-				}
-				caminho="a1";
-					alert(imgA2);
-				}else{
-					alert("desligado");
-
-
+				if(caminho==""){
+					if(bntPasso.checked){
+						if(imgA2==amarelo){
+							document.f.imgA3.src=verde;
+						}
+						caminho="a1";
+						alert(imgA2);
+					}else{
+						if(imgA2==amarelo && imgB1==buraco){
+							document.f.imgA1.src=buraco;
+							document.f.imgA2.src=buraco;
+							document.f.imgA3.src=amarelo;
+						}
+						if(imgA2==buraco && imgB1==amarelo){
+							document.f.imgA1.src=buraco;
+							document.f.imgB1.src=buraco;
+							document.f.imgC1.src=amarelo;
+						}
+						alert("desligado");
+					}
 				}
 			}
-
 		}
 		</script>
 		
