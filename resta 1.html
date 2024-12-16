@@ -81,17 +81,12 @@
 			}
 			
 		</style>
-		<script>
-		function identificador(){
-		}
-			
+		<script>			
 		function mover(peca){
 			var amarelo="https://josedesen.github.io/resta1/amarelo.png";
 			var verde="https://josedesen.github.io/resta1/verde.png";
 			var buraco="https://josedesen.github.io/resta1/buraco.png";
 			var caminho="";
-			identificador();
-			
 			var imgA1=document.f.imgA1.src;
 			var imgA2=document.f.imgA2.src;
 			var imgA3=document.f.imgA3.src;
@@ -162,22 +157,83 @@
 					if(bntPasso.checked){
 						if(imgA2==amarelo){
 							document.f.imgA3.src="verde.png";
+						}	
+						if(imgB1==amarelo){
+							document.f.imgC1.src="verde.png";
 						}
 						caminho="a1";
 						alert(imgA2);
 					}else{
-						if(imgA2==amarelo && imgB1==buraco){
-							document.f.imgA1.src=buraco;
-							document.f.imgA2.src=buraco;
-							document.f.imgA3.src=amarelo;
-						}
-						if(imgA2==buraco && imgB1==amarelo){
-							document.f.imgA1.src=buraco;
-							document.f.imgB1.src=buraco;
-							document.f.imgC1.src=amarelo;
+						if(imgA3==amarelo && imgA4==buraco && imgA2==buraco && imgB1==amarelo){
+							if(imgA2==amarelo){
+								document.f.imgA3.src="verde.png";
+							}
+							if(imgB1==amarelo){
+								document.f.imgC1.src="verde.png";
+							}
+						}else{
+							if(imgA3==amarelo && imgA4==buraco){
+								document.f.imgA2.src=buraco;
+								document.f.imgA3.src=buraco;
+								document.f.imgA4.src=amarelo;
+							}
+							if(imgA2==buraco && imgB1==amarelo){
+								document.f.imgA1.src=buraco;
+								document.f.imgB1.src=buraco;
+								document.f.imgC1.src=amarelo;
+							}
 						}
 						alert("desligado");
 					}
+				}else{
+					if(caminho=="a3"){
+						document.f.imgA1.src=amrelo;
+						document.f.imgA2.src=buraco;
+						document.f.imgA3.src=buraco;
+					}
+					if(caminho=="c1"){
+						document.f.imgA1.src=amrelo;
+						document.f.imgB1.src=buraco;
+						document.f.imgC1.src=buraco;
+					
+					
+				}
+			}
+			if(peca=="a2"){
+				if(caminho==""){
+					if(bntPasso.checked){
+						if(imgA3==amarelo){
+							document.f.imgA4.src="verde.png";
+						}
+						caminho="a2";
+					}else{
+						if(imgA3==amarelo && imgA4==buraco && imgA2==buraco && imgB1==amarelo){
+						}else{
+							if(imgA3==amarelo && imgA4==buraco){
+								document.f.imgA2.src=buraco;
+								document.f.imgA3.src=buraco;
+								document.f.imgA4.src=amarelo;
+							}
+							if(imgA2==buraco && imgB1==amarelo){
+								document.f.imgA1.src=buraco;
+								document.f.imgB1.src=buraco;
+								document.f.imgC1.src=amarelo;
+							}
+						}
+						alert("desligado");
+					}
+				}else{
+					if(caminho=="a3"){
+						document.f.imgA1.src=amrelo;
+						document.f.imgA2.src=buraco;
+						document.f.imgA3.src=buraco;
+					}
+					if(caminho=="c1"){
+						document.f.imgA1.src=amrelo;
+						document.f.imgB1.src=buraco;
+						document.f.imgC1.src=buraco;
+					
+					
 				}
 			}
 		}
