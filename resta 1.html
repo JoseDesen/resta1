@@ -85,17 +85,36 @@
 		function mover(peca){
 var amarelo="https://josedesen.github.io/resta1/amarelo.png";
 var verde="https://josedesen.github.io/resta1/verde.png";
+var buraco="https://josedesen.github.io/resta1/buraco.png";
+var caminho="";
 var imgA1=document.f.imgA1.src;
 var imgA2=document.f.imgA2.src;
+var imgA3=document.f.imgA3.src;
+var imgA4=document.f.imgA4.src;
+var imgA5=document.f.imgA5.src;
+var imgA6=document.f.imgA6.src;
+var imgA7=document.f.imgA7.src;
+var imgA8=document.f.imgA8.src;
+var imgB1=document.f.imgB1.src;
+var imgB2=document.f.imgB2.src;
+var imgB3=document.f.imgB3.src;
+var imgB4=document.f.imgB4.src;
+var imgB5=document.f.imgB5.src;
+var imgB6=document.f.imgB6.src;
+var imgB7=document.f.imgB7.src;
+var imgB8=document.f.imgB8.src;
 			var bntPasso = document.getElementById("switch-shadow");
 			if(peca=="a1"){
 				if(bntPasso.checked){
 if(imgA2==amarelo){
 document.f.imgA3.src=verde;
 }
+caminho="a1";
 					alert(imgA2);
 				}else{
 					alert("desligado");
+
+
 				}
 			}
 
