@@ -164,7 +164,7 @@
 						caminho="a1";
 						alert(imgA2);
 					}else{
-						if(imgA3==amarelo && imgA4==buraco && imgA2==buraco && imgB1==amarelo){
+						if((imgA3==amarelo && imgA4==buraco) || (imgA2==buraco && imgB1==amarelo)){
 							if(imgA2==amarelo){
 								document.f.imgA3.src="verde.png";
 							}
@@ -207,19 +207,6 @@
 						}
 						caminho="a2";
 					}else{
-						if(imgA3==amarelo && imgA4==buraco && imgA2==buraco && imgB1==amarelo){
-						}else{
-							if(imgA3==amarelo && imgA4==buraco){
-								document.f.imgA2.src=buraco;
-								document.f.imgA3.src=buraco;
-								document.f.imgA4.src=amarelo;
-							}
-							if(imgA2==buraco && imgB1==amarelo){
-								document.f.imgA1.src=buraco;
-								document.f.imgB1.src=buraco;
-								document.f.imgC1.src=amarelo;
-							}
-						}
 						alert("desligado");
 					}
 				}else{
