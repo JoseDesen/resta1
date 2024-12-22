@@ -32,7 +32,7 @@
 		var amarelo="https://josedesen.github.io/resta1/amarelo.png";
 		var verde="https://josedesen.github.io/resta1/verde.png";
 		var buraco="https://josedesen.github.io/resta1/buraco.png";
-		var caminho="";			
+		var receber="";			
 		function mover(peca){
 			var imgA1=document.f.imgA1.src;
 			var imgA2=document.f.imgA2.src;
@@ -100,15 +100,21 @@
 			var imgH8=document.f.imgH8.src;
 			
 			if(peca=="a1"){
-				if(caminho==""){
+				if(receber==""){
 					if(imgA2==amarelo && imgA3==buraco){
 						document.f.imgA3.src=verde;
-						caminho="a1";
+						receber="a1";
 					}
 					if(imgB1==amarelo && imgC1==buraco){
 						document.f.imgC1.src=verde;
-						caminho="a1";
+						receber="a1";
 					}
+				}
+				if(receber=="a3"){
+						document.f.imgA3.src=buraco;
+						document.f.imgA2.src=buraco;
+						document.f.imgA1.src=amarelo;
+						receber="";
 				}
 			}
 		}
