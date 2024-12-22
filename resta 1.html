@@ -25,68 +25,15 @@
 				margin-right:27.5%;
 				background-color:white;
 				}
-			.switch__container {
-			  margin: 30px auto;
-			  width: 120px;
-			}
 			
-			.switch {
-			  visibility: hidden;
-			  position: absolute;
-			  margin-left: -9999px;
-			}
-			
-			.switch + label {
-			  display: block;
-			  position: relative;
-			  cursor: pointer;
-			  outline: none;
-			  user-select: none;
-			}
-			
-			.switch--shadow + label {
-			  padding: 2px;
-			  width: 120px;
-			  height: 60px;
-			  background-color: #dddddd;
-			  border-radius: 60px;
-			}
-			.switch--shadow + label:before,
-			.switch--shadow + label:after {
-			  display: block;
-			  position: absolute;
-			  top: 1px;
-			  left: 1px;
-			  bottom: 1px;
-			  content: "";
-			}
-			.switch--shadow + label:before {
-			  right: 1px;
-			  background-color: #f1f1f1;
-			  border-radius: 60px;
-			  transition: background 0.4s;
-			}
-			.switch--shadow + label:after {
-			  width: 62px;
-			  background-color: #fff;
-			  border-radius: 100%;
-			  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-			  transition: all 0.4s;
-			}
-			.switch--shadow:checked + label:before {
-			  background-color: #8ce196;
-			}
-			.switch--shadow:checked + label:after {
-			  transform: translateX(60px);
-			}
 			
 		</style>
-		<script>			
+		<script>
+		var amarelo="https://josedesen.github.io/resta1/amarelo.png";
+		var verde="https://josedesen.github.io/resta1/verde.png";
+		var buraco="https://josedesen.github.io/resta1/buraco.png";
+		var caminho="";			
 		function mover(peca){
-			var amarelo="https://josedesen.github.io/resta1/amarelo.png";
-			var verde="https://josedesen.github.io/resta1/verde.png";
-			var buraco="https://josedesen.github.io/resta1/buraco.png";
-			var caminho="";
 			var imgA1=document.f.imgA1.src;
 			var imgA2=document.f.imgA2.src;
 			var imgA3=document.f.imgA3.src;
@@ -151,75 +98,10 @@
 			var imgH6=document.f.imgH6.src;
 			var imgH7=document.f.imgH7.src;
 			var imgH8=document.f.imgH8.src;
-			var bntPasso = document.getElementById("switch-shadow");
+			
 			if(peca=="a1"){
 				if(caminho==""){
-					if(bntPasso.checked){
-						if(imgA2==amarelo){
-							document.f.imgA3.src="verde.png";
-						}	
-						if(imgB1==amarelo){
-							document.f.imgC1.src="verde.png";
-						}
-						caminho="a1";
-						alert(imgA2);
-					}else{
-						if((imgA3==amarelo && imgA4==buraco) || (imgA2==buraco && imgB1==amarelo)){
-							if(imgA2==amarelo){
-								document.f.imgA3.src="verde.png";
-							}
-							if(imgB1==amarelo){
-								document.f.imgC1.src="verde.png";
-							}
-						}else{
-							if(imgA3==amarelo && imgA4==buraco){
-								document.f.imgA2.src=buraco;
-								document.f.imgA3.src=buraco;
-								document.f.imgA4.src=amarelo;
-							}
-							if(imgA2==buraco && imgB1==amarelo){
-								document.f.imgA1.src=buraco;
-								document.f.imgB1.src=buraco;
-								document.f.imgC1.src=amarelo;
-							}
-						}
-						alert("desligado");
-					}
-				}else{
-					if(caminho=="a3"){
-						document.f.imgA1.src=amrelo;
-						document.f.imgA2.src=buraco;
-						document.f.imgA3.src=buraco;
-					}
-					if(caminho=="c1"){
-						document.f.imgA1.src=amrelo;
-						document.f.imgB1.src=buraco;
-						document.f.imgC1.src=buraco;
-					
-					
-				}
-			}
-			if(peca=="a2"){
-				if(caminho==""){
-					if(bntPasso.checked){
-						if(imgA3==amarelo){
-							document.f.imgA4.src="verde.png";
-						}
-						caminho="a2";
-					}else{
-						alert("desligado");
-					}
-				}else{
-					if(caminho=="a3"){
-						document.f.imgA1.src=amrelo;
-						document.f.imgA2.src=buraco;
-						document.f.imgA3.src=buraco;
-					}
-					if(caminho=="c1"){
-						document.f.imgA1.src=amrelo;
-						document.f.imgB1.src=buraco;
-						document.f.imgC1.src=buraco;
-					
+				alert();
 					
 				}
 			}
@@ -310,10 +192,5 @@
 			<button type="button" id="h7" name="h7" onclick="mover('h7')"><img name="imgH7" src="buraco.png"></button>
 			<button type="button" id="h8" name="h8" onclick="mover('h8')"><img name="imgH8" src="buraco.png"></button>		
 		</form>
-		</div>
-<div class="switch__container">
- confirmar o próximo passo:<input id="switch-shadow" class="switch switch--shadow" type="checkbox">
-  <label for="switch-shadow"></label>
-</div>
 	</body>
 </html>
