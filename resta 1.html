@@ -151,6 +151,43 @@
 					ativar();
 				}
 			}
+			if(peca=="a3"){
+				if(receber=="" && imgA3==amarelo){
+					if(imgA4==amarelo && imgA5==buraco){
+						document.f.imgA5.src=verde;
+						receber="a3";
+					}
+					if(imgB3==amarelo && imgC3==buraco){
+						document.f.imgC1.src=verde;
+						receber="a3";
+					}
+					if(imgA2==amarelo && imgA1==buraco){
+						document.f.imgA1.src=verde;
+						receber="a3";
+					}
+				}
+				if(receber=="a5"){
+					document.f.imgA5.src=buraco;
+					document.f.imgA4.src=buraco;
+					document.f.imgA2.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="c3"){
+					document.f.imgC3.src=buraco;
+					document.f.imgB3.src=buraco;
+					document.f.imgA3.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="a1"){
+					document.f.imgA1.src=buraco;
+					document.f.imgA2.src=buraco;
+					document.f.imgA3.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
 			if(receber!=""){
 				desativar();
 			}
@@ -489,9 +526,9 @@
 		<h2>Resta 1</h2>
 		<div id="buraco"><br><br></div>
 		<form name="f">
-			<button type="button" id="a1" name="a1" onclick="mover('a1')"><img name="imgA1" src="buraco.png"></button>
+			<button type="button" id="a1" name="a1" onclick="mover('a1')"><img name="imgA1" src="amarelo.png"></button>
 			<button type="button" id="a2" name="a2" onclick="mover('a2')"><img name="imgA2" src="amarelo.png"></button>
-			<button type="button" id="a3" name="a3" onclick="mover('a3')"><img name="imgA3" src="amarelo.png"></button>
+			<button type="button" id="a3" name="a3" onclick="mover('a3')"><img name="imgA3" src="buraco.png"></button>
 			<button type="button" id="a4" name="a4" onclick="mover('a4')"><img name="imgA4" src="buraco.png"></button>
 			<button type="button" id="a5" name="a5" onclick="mover('a5')"><img name="imgA5" src="buraco.png"></button>
 			<button type="button" id="a6" name="a6" onclick="mover('a6')"><img name="imgA6" src="buraco.png"></button>
