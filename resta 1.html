@@ -299,6 +299,59 @@
 					ativar();
 				}
 			}
+			if(peca=="a7"){
+				if(receber=="" && imgA7==amarelo){
+					if(imgB7==amarelo && imgC7==buraco){
+						document.f.imgC7.src=verde;
+						receber="a7";
+					}
+					if(imgA6==amarelo && imgA5==buraco){
+						document.f.imgA5.src=verde;
+						receber="a7";
+					}
+				}
+				
+				if(receber=="c7"){
+					document.f.imgC7.src=buraco;
+					document.f.imgB7.src=buraco;
+					document.f.imgA7.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="a5"){
+					document.f.imgA5.src=buraco;
+					document.f.imgA6.src=buraco;
+					document.f.imgA7.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="a8"){
+				if(receber=="" && imgA8==amarelo){
+					if(imgB8==amarelo && imgC8==buraco){
+						document.f.imgC8.src=verde;
+						receber="a8";
+					}
+					if(imgA7==amarelo && imgA6==buraco){
+						document.f.imgA6.src=verde;
+						receber="a8";
+					}
+				}
+				if(receber=="c8"){
+					document.f.imgC8.src=buraco;
+					document.f.imgB8.src=buraco;
+					document.f.imgA8.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="a6"){
+					document.f.imgA6.src=buraco;
+					document.f.imgA7.src=buraco;
+					document.f.imgA8.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
 			if(receber!=""){
 				desativar();
 			}
@@ -899,7 +952,7 @@
 			<button type="button" id="a3" name="a3" onclick="mover('a3')"><img name="imgA3" src="buraco.png"></button>
 			<button type="button" id="a4" name="a4" onclick="mover('a4')"><img name="imgA4" src="amarelo.png"></button>
 			<button type="button" id="a5" name="a5" onclick="mover('a5')"><img name="imgA5" src="buraco.png"></button>
-			<button type="button" id="a6" name="a6" onclick="mover('a6')"><img name="imgA6" src="buraco.png"></button>
+			<button type="button" id="a6" name="a6" onclick="mover('a6')"><img name="imgA6" src="amarelo.png"></button>
 			<button type="button" id="a7" name="a7" onclick="mover('a7')"><img name="imgA7" src="buraco.png"></button>
 			<button type="button" id="a8" name="a8" onclick="mover('a8')"><img name="imgA8" src="buraco.png"></button>
 			<br>
