@@ -726,11 +726,58 @@
 					ativar();
 				}
 			}
-			if(receber!=""){
-				desativar();
-			}
+		if(peca=="c4"){
+				if(receber=="" && imgC4==amarelo){
+					if(imgC5==amarelo && imgC6==buraco){
+						document.f.imgC6.src=verde;
+						receber="c4";
+					}
+					if(imgD4==amarelo && imgE4==buraco){
+						document.f.imgE4.src=verde;
+						receber="c4";
+					}
+					if(imgC3==amarelo && imgC2==buraco){
+						document.f.imgC2.src=verde;
+						receber="c4";
+					}
+					if(imgB4==amarelo && imgA4==buraco){
+						document.f.imgA4.src=verde;
+						receber="c4";
+					}
+				}
+				if(receber=="c6"){
+					document.f.imgC6.src=buraco;
+					document.f.imgC5.src=buraco;
+					document.f.imgC4.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="e4"){
+					document.f.imgE4.src=buraco;
+					document.f.imgD4.src=buraco;
+					document.f.imgC4.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="c2"){
+					document.f.imgC2.src=buraco;
+					document.f.imgC3.src=buraco;
+					document.f.imgC34.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="a4"){
+					document.f.imgA4.src=buraco;
+					document.f.imgB4.src=buraco;
+					document.f.imgC4.src=amarelo;
+					receber="";
+					ativar();
+				}
 		}
-		
+		if(receber!=""){
+				desativar();
+		}
+	}
 		function desativar(){
 			var imgA1=document.f.imgA1.src;
 			var imgA2=document.f.imgA2.src;
