@@ -641,6 +641,43 @@
 					ativar();
 				}
 			}
+			if(peca=="c2"){
+				if(receber=="" && imgC2==amarelo){
+					if(imgC3==amarelo && imgC4==buraco){
+						document.f.imgC4.src=verde;
+						receber="c2";
+					}
+					if(imgD2==amarelo && imgE2==buraco){
+						document.f.imgE2.src=verde;
+						receber="c2";
+					}
+					if(img2==amarelo && imgA2==buraco){
+						document.f.imgA2.src=verde;
+						receber="c2";
+					}
+				}
+				if(receber=="c4"){
+					document.f.imgC4.src=buraco;
+					document.f.imgC3.src=buraco;
+					document.f.imgC2.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="e2"){
+					document.f.imgE2.src=buraco;
+					document.f.imgD2.src=buraco;
+					document.f.imgC2.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="a2"){
+					document.f.imgA2.src=buraco;
+					document.f.imgB2.src=buraco;
+					document.f.imgC2.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
 			if(receber!=""){
 				desativar();
 			}
