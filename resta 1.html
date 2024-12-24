@@ -1,4 +1,4 @@
-i<html>
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Resta 1</title>
@@ -478,7 +478,169 @@ i<html>
 					ativar();
 				}
 			}
-			
+			if(peca=="b5"){
+				if(receber=="" && imgB5==amarelo){
+					if(imgB6==amarelo && imgB7==buraco){
+						document.f.imgB7.src=verde;
+						receber="b5";
+					}
+					if(imgC5==amarelo && imgD5==buraco){
+						document.f.imgD5.src=verde;
+						receber="b5";
+					}
+					if(imgB4==amarelo && imgB3==buraco){
+						document.f.imgB3.src=verde;
+						receber="b5";
+					}
+				}
+				if(receber=="b7"){
+					document.f.imgB7.src=buraco;
+					document.f.imgB6.src=buraco;
+					document.f.imgB5.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="d5"){
+					document.f.imgD5.src=buraco;
+					document.f.imgC5.src=buraco;
+					document.f.imgB5.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="b4"){
+					document.f.imgB4.src=buraco;
+					document.f.imgB5.src=buraco;
+					document.f.imgB6.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="b6"){
+				if(receber=="" && imgB6==amarelo){
+					if(imgB7==amarelo && imgB8==buraco){
+						document.f.imgB8.src=verde;
+						receber="b6";
+					}
+					if(imgC6==amarelo && imgD6==buraco){
+						document.f.imgD6.src=verde;
+						receber="b6";
+					}
+					if(imgB5==amarelo && imgB4==buraco){
+						document.f.imgB4.src=verde;
+						receber="b6";
+					}
+				}
+				if(receber=="b8"){
+					document.f.imgB8.src=buraco;
+					document.f.imgB7.src=buraco;
+					document.f.imgB6.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="d6"){
+					document.f.imgD6.src=buraco;
+					document.f.imgC6.src=buraco;
+					document.f.imgB6.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="b4"){
+					document.f.imgB4.src=buraco;
+					document.f.imgB5.src=buraco;
+					document.f.imgB6.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="b7"){
+				if(receber=="" && imgB7==amarelo){
+					if(imgC7==amarelo && imgD7==buraco){
+						document.f.imgD7.src=verde;
+						receber="b7";
+					}
+					if(imgB6==amarelo && imgB5==buraco){
+						document.f.imgB5.src=verde;
+						receber="b7";
+					}
+				}
+				if(receber=="d7"){
+					document.f.imgD7.src=buraco;
+					document.f.imgC7.src=buraco;
+					document.f.imgB7.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="b5"){
+					document.f.imgB5.src=buraco;
+					document.f.imgB6.src=buraco;
+					document.f.imgB7.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="b8"){
+				if(receber=="" && imgB8==amarelo){
+					if(imgC8==amarelo && imgD8==buraco){
+						document.f.imgD8.src=verde;
+						receber="b8";
+					}
+					if(imgB7==amarelo && imgB6==buraco){
+						document.f.imgB6.src=verde;
+						receber="b8";
+					}
+				}
+				if(receber=="d7"){
+					document.f.imgD7.src=buraco;
+					document.f.imgC7.src=buraco;
+					document.f.imgB7.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="b6"){
+					document.f.imgB6.src=buraco;
+					document.f.imgB7.src=buraco;
+					document.f.imgB8.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="c1"){
+				if(receber=="" && imgC1==amarelo){
+					if(imgC2==amarelo && imgC3==buraco){
+						document.f.imgC3.src=verde;
+						receber="c1";
+					}
+					if(imgD1==amarelo && imgE1==buraco){
+						document.f.imgE1.src=verde;
+						receber="c1";
+					}
+					if(imgB1==amarelo && imgA1==buraco){
+						document.f.imgA1.src=verde;
+						receber="c1";
+					}
+				}
+				if(receber=="c3"){
+					document.f.imgc3.src=buraco;
+					document.f.imgC2.src=buraco;
+					document.f.imgC1.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="e1"){
+					document.f.imgE1.src=buraco;
+					document.f.imgD1.src=buraco;
+					document.f.imgC1.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="a1"){
+					document.f.imgA1.src=buraco;
+					document.f.imgB1.src=buraco;
+					document.f.imgC1.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
 			if(receber!=""){
 				desativar();
 			}
