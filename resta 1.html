@@ -352,6 +352,59 @@
 					ativar();
 				}
 			}
+			if(peca=="b1"){
+				if(receber=="" && imgB1==amarelo){
+					if(imgB2==amarelo && imgB3==buraco){
+						document.f.imgB3.src=verde;
+						receber="b1";
+					}
+					if(imgC1==amarelo && imD1==buraco){
+						document.f.imgC1.src=verde;
+						receber="b1";
+					}
+				}
+				if(receber=="b3"){
+					document.f.imgB3.src=buraco;
+					document.f.imgB2.src=buraco;
+					document.f.imgB1.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="d1"){
+					document.f.imgD1.src=buraco;
+					document.f.imgC1.src=buraco;
+					document.f.imgB1.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="b2"){
+				if(receber=="" && imgB2==amarelo){
+					if(imgB3==amarelo && imgB4==buraco){
+						document.f.imgB4.src=verde;
+						receber="b2";
+					}
+					if(imgC2==amarelo && imgD2==buraco){
+						document.f.imgD2.src=verde;
+						receber="b2";
+					}
+				}
+				if(receber=="b4"){
+					document.f.imgB4.src=buraco;
+					document.f.imgB3.src=buraco;
+					document.f.imgB2.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="d2"){
+					document.f.imgD2.src=buraco;
+					document.f.imgC2.src=buraco;
+					document.f.imgB2.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			
 			if(receber!=""){
 				desativar();
 			}
@@ -957,8 +1010,8 @@
 			<button type="button" id="a8" name="a8" onclick="mover('a8')"><img name="imgA8" src="buraco.png"></button>
 			<br>
 				
-			<button type="button" id="b1" name="b1" onclick="mover('b1')"><img name="imgB1" src="buraco.png"></button>
-			<button type="button" id="b2" name="b2" onclick="mover('b2')"><img name="imgB2" src="buraco.png"></button>
+			<button type="button" id="b1" name="b1" onclick="mover('b1')"><img name="imgB1" src="amarelo.png"></button>
+			<button type="button" id="b2" name="b2" onclick="mover('b2')"><img name="imgB2" src="amarelo.png"></button>
 			<button type="button" id="b3" name="b3" onclick="mover('b3')"><img name="imgB3" src="buraco.png"></button>
 			<button type="button" id="b4" name="b4" onclick="mover('b4')"><img name="imgB4" src="buraco.png"></button>
 			<button type="button" id="b5" name="b5" onclick="mover('b5')"><img name="imgB5" src="buraco.png"></button>
@@ -966,8 +1019,8 @@
 			<button type="button" id="b7" name="b7" onclick="mover('b7')"><img name="imgB7" src="buraco.png"></button>
 			<button type="button" id="b8" name="b8" onclick="mover('b8')"><img name="imgB8" src="buraco.png"></button>
 			<br>
-			<button type="button" id="c1" name="c1" onclick="mover('c1')"><img name="imgC1" src="buraco.png"></button>
-			<button type="button" id="c2" name="c2" onclick="mover('c2')"><img name="imgC2" src="buraco.png"></button>
+			<button type="button" id="c1" name="c1" onclick="mover('c1')"><img name="imgC1" src="amarelo.png"></button>
+			<button type="button" id="c2" name="c2" onclick="mover('c2')"><img name="imgC2" src="amarelo.png"></button>
 			<button type="button" id="c3" name="c3" onclick="mover('c3')"><img name="imgC3" src="buraco.png"></button>
 			<button type="button" id="c4" name="c4" onclick="mover('c4')"><img name="imgC4" src="buraco.png"></button>
 			<button type="button" id="c5" name="c5" onclick="mover('c5')"><img name="imgC5" src="buraco.png"></button>
