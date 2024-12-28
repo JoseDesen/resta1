@@ -2343,6 +2343,36 @@
 					ativar();
 				}
 			}
+			if(peca=="h7"){
+				if(receber=="" && imgH7==amarelo){
+					if(imgH6==amarelo && imgH5==buraco){
+						document.f.imgH5.src=verde;
+						receber="h7";
+					}
+					if(imgG7==amarelo && imgF7==buraco){
+						document.f.imgF7.src=verde;
+						receber="h7";
+					}
+				}
+				if(receber=="H5"){
+					document.f.imgH5.src=buraco;
+					document.f.imgH6.src=buraco;
+					document.f.imgH7.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="f7"){
+					document.f.imgF7.src=buraco;
+					document.f.imgG7.src=buraco;
+					document.f.imgH7.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+
+
+
+
 
 
 
