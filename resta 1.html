@@ -1,4 +1,4 @@
-t<html>
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Resta 1</title>
@@ -2217,6 +2217,99 @@ t<html>
 					ativar();
 				}
 			}
+			if(peca=="h1"){
+				if(receber=="" && imgH1==amarelo){
+					if(imgH2==amarelo && imgH3==buraco){
+						document.f.imgH3.src=verde;
+						receber="h1";
+					}
+					if(imgG1==amarelo && imgF1==buraco){
+						document.f.imgF1.src=verde;
+						receber="h1";
+					}
+				}
+				if(receber=="h3"){
+					document.f.imgH3.src=buraco;
+					document.f.imgH2.src=buraco;
+					document.f.imgH1.src=amarelo;
+					receber="";
+					ativar();
+			}
+				if(receber=="f1"){
+					document.f.imgF1.src=buraco;
+					document.f.imgG1.src=buraco;
+					document.f.imgH1.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="h2"){
+				if(receber=="" && imgH2==amarelo){
+					if(imgH3==amarelo && imgH4==buraco){
+						document.f.imgH4.src=verde;
+						receber="h2";
+					}
+					if(imgG2==amarelo && imgF2==buraco){
+						document.f.imgF2.src=verde;
+						receber="h2";
+					}
+				}
+				if(receber=="h4"){
+					document.f.imgH4.src=buraco;
+					document.f.imgH3.src=buraco;
+					document.f.imgH2.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="f2"){
+					document.f.imgF2.src=buraco;
+					document.f.imgG2.src=buraco;
+					document.f.imgH2.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="h3"){
+				if(receber=="" && imgH3==amarelo){
+					if(imgH4==amarelo && imgH5==buraco){
+						document.f.imgH5.src=verde;
+						receber="h3";
+					}
+					if(imgH2==amarelo && imgH1==buraco){
+						document.f.imgH1.src=verde;
+						receber="h3";
+					}
+					if(imgG3==amarelo && imgF3==buraco){
+						document.f.imgF3.src=verde;
+						receber="h3";
+					}
+				}
+				if(receber=="h5"){
+					document.f.imgH5.src=buraco;
+					document.f.imgH4.src=buraco;
+					document.f.imgH3.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="h1"){
+					document.f.imgH1.src=buraco;
+					document.f.imgH2.src=buraco;
+					document.f.imgH3.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="f5"){
+					document.f.imgF5.src=buraco;
+					document.f.imgG5.src=buraco;
+					document.f.imgH5.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+
+
+
+
 
 			
 		
