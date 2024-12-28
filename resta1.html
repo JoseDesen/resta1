@@ -3217,7 +3217,7 @@
 			}
 			if(contador==1){
 				alert("Vc conseguiu esse nível\n atualize a página pra ir para o próximo nível");
-				var proximo=parseInt(sessionStorage.getItem('nivel')+1);
+				var proximo=Math.floor(sessionStorage.getItem('nivel')+1);
 				sessionStorage.setItem('nivel',proximo);
 				niveis();
 				alert(proximo);
