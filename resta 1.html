@@ -1,4 +1,4 @@
-a<html>
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Resta 1</title>
@@ -1624,6 +1624,347 @@ a<html>
 					ativar();
 				}
 			}
+			if(peca=="f1"){
+				if(receber=="" && imgF1==amarelo){
+					if(imgF2==amarelo && imgF3==buraco){
+						document.f.imgF3.src=verde;
+						receber="f1";
+					}
+					if(imgG1==amarelo && imgH1==buraco){
+						document.f.imgH1.src=verde;
+						receber="f1";
+					}
+					if(imgE1==amarelo && imgD1==buraco){
+						document.f.imgD1.src=verde;
+						receber="f1";
+					}
+				}
+				if(receber=="f3"){
+					document.f.imgF3.src=buraco;
+					document.f.imgF2.src=buraco;
+					document.f.imgF1.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="h1"){
+					document.f.imgH1.src=buraco;
+					document.f.imgG1.src=buraco;
+					document.f.imgF1.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="d1"){
+					document.f.imgD1.src=buraco;
+					document.f.imgE1.src=buraco;
+					document.f.imgF1.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="f2"){
+				if(receber=="" && imgF2==amarelo){
+					if(imgF3==amarelo && imgF4==buraco){
+						document.f.imgF4.src=verde;
+						receber="f2";
+					}
+					if(imgG2==amarelo && imgH2==buraco){
+						document.f.imgH2.src=verde;
+						receber="f2";
+					}
+					if(imgE2==amarelo && imgD2==buraco){
+						document.f.imgD2.src=verde;
+						receber="f2";
+					}
+				}
+				if(receber=="f4"){
+					document.f.imgF4.src=buraco;
+					document.f.imgF3.src=buraco;
+					document.f.imgF2.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="h2"){
+					document.f.imgH2.src=buraco;
+					document.f.imgG2.src=buraco;
+					document.f.imgF2.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="d2"){
+					document.f.imgD2.src=buraco;
+					document.f.imgE2.src=buraco;
+					document.f.imgF2.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="f3"){
+				if(receber=="" && imgF3==amarelo){
+					if(imgF4==amarelo && imgF5==buraco){
+						document.f.imgF5.src=verde;
+						receber="f3";
+					}
+					if(imgG3==amarelo && imgH3==buraco){
+						document.f.imgH3.src=verde;
+						receber="f3";
+					}
+					if(imgF2==amarelo && imgF1==buraco){
+						document.f.imgF1.src=verde;
+						receber="f3";
+					}
+					if(imgE3==amarelo && imgD3==buraco){
+						document.f.imgD3.src=verde;
+						receber="f3";
+					}
+				}
+				if(receber=="f5"){
+					document.f.imgF5.src=buraco;
+					document.f.imgF4.src=buraco;
+					document.f.imgF3.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="h3"){
+					document.f.imgH3.src=buraco;
+					document.f.imgG3.src=buraco;
+					document.f.imgF3.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="f1"){
+					document.f.imgF1.src=buraco;
+					document.f.imgF2.src=buraco;
+					document.f.imgF3.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="d3"){
+					document.f.imgD3.src=buraco;
+					document.f.imgE3.src=buraco;
+					document.f.imgF3.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="f4"){
+				if(receber=="" && imgF4==amarelo){
+					if(imgF5==amarelo && imgF6==buraco){
+						document.f.imgF6.src=verde;
+						receber="f4";
+					}
+					if(imgG4==amarelo && imgH4==buraco){
+						document.f.imgH4.src=verde;
+						receber="f4";
+					}
+					if(imgF3==amarelo && imgF2==buraco){
+						document.f.imgF2.src=verde;
+						receber="f4";
+					}
+					if(imgE4==amarelo && imgD4==buraco){
+						document.f.imgD4.src=verde;
+						receber="f4";
+					}
+				}
+				if(receber=="f6"){
+					document.f.imgF6.src=buraco;
+					document.f.imgF5.src=buraco;
+					document.f.imgF4.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="h4"){
+					document.f.imgH4.src=buraco;
+					document.f.imgG4.src=buraco;
+					document.f.imgF4.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="f2"){
+					document.f.imgF2.src=buraco;
+					document.f.imgF3.src=buraco;
+					document.f.imgF4.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="d4"){
+					document.f.imgD4.src=buraco;
+					document.f.imgE4.src=buraco;
+					document.f.imgF4.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="f5"){
+				if(receber=="" && imgF5==amarelo){
+					if(imgF6==amarelo && imgF7==buraco){
+						document.f.imgF7.src=verde;
+						receber="f5";
+					}
+					if(imgG5==amarelo && imgH5==buraco){
+						document.f.imgH5.src=verde;
+						receber="f5";
+					}
+					if(imgF4==amarelo && imgF3==buraco){
+						document.f.imgF3.src=verde;
+						receber="f5";
+					}
+					if(imgE5==amarelo && imgD5==buraco){
+						document.f.imgD5.src=verde;
+						receber="f5";
+					}
+				}
+				if(receber=="f7"){
+					document.f.imgF7.src=buraco;
+					document.f.imgF6.src=buraco;
+					document.f.imgF5.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="h5"){
+					document.f.imgH5.src=buraco;
+					document.f.imgG5.src=buraco;
+					document.f.imgF5.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="f3"){
+					document.f.imgF3.src=buraco;
+					document.f.imgF4.src=buraco;
+					document.f.imgF5.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="d5"){
+					document.f.imgD5.src=buraco;
+					document.f.imgE5.src=buraco;
+					document.f.imgF5.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="f6"){
+				if(receber=="" && imgF6==amarelo){
+					if(imgF7==amarelo && imgF8==buraco){
+						document.f.imgF8.src=verde;
+						receber="f6";
+					}
+					if(imgG6==amarelo && imgH6==buraco){
+						document.f.imgH6.src=verde;
+						receber="f6";
+					}
+					if(imgF5==amarelo && imgF4==buraco){
+						document.f.imgF4.src=verde;
+						receber="f6";
+					}
+					if(imgE6==amarelo && imgD6==buraco){
+						document.f.imgD6.src=verde;
+						receber="f6";
+					}
+				}
+				if(receber=="f8"){
+					document.f.imgF8.src=buraco;
+					document.f.imgF7.src=buraco;
+					document.f.imgF6.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="h6"){
+					document.f.imgH6.src=buraco;
+					document.f.imgG6.src=buraco;
+					document.f.imgF6.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="f4"){
+					document.f.imgF4.src=buraco;
+					document.f.imgF5.src=buraco;
+					document.f.imgF6.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="d6"){
+					document.f.imgD6.src=buraco;
+					document.f.imgE6.src=buraco;
+					document.f.imgF6.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="f7"){
+				if(receber=="" && imgF7==amarelo){
+					if(imgG7==amarelo && imgH7==buraco){
+						document.f.imgH7.src=verde;
+						receber="f7";
+					}
+					if(imgF6==amarelo && imgF5==buraco){
+						document.f.imgF5.src=verde;
+						receber="f7";
+					}
+					if(imgE7==amarelo && imgD7==buraco){
+						document.f.imgD7.src=verde;
+						receber="f7";
+					}
+				}
+				if(receber=="h7"){
+					document.f.imgH7.src=buraco;
+					document.f.imgG7.src=buraco;
+					document.f.imgF7.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="f5"){
+					document.f.imgF5.src=buraco;
+					document.f.imgF6.src=buraco;
+					document.f.imgF7.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="d7"){
+					document.f.imgD7.src=buraco;
+					document.f.imgE7.src=buraco;
+					document.f.imgF7.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			if(peca=="f8"){
+				if(receber=="" && imgF8==amarelo){
+					if(imgG8==amarelo && imgH8==buraco){
+						document.f.imgH8.src=verde;
+						receber="f8";
+					}
+					if(imgF7==amarelo && imgF6==buraco){
+						document.f.imgF6.src=verde;
+						receber="f8";
+					}
+					if(imgE8==amarelo && imgD8==buraco){
+						document.f.imgD8.src=verde;
+						receber="f8";
+					}
+				}
+				if(receber=="h8"){
+					document.f.imgH8.src=buraco;
+					document.f.imgG8.src=buraco;
+					document.f.imgF8.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="f6"){
+					document.f.imgF6.src=buraco;
+					document.f.imgF7.src=buraco;
+					document.f.imgF8.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="d8"){
+					document.f.imgD8.src=buraco;
+					document.f.imgE8.src=buraco;
+					document.f.imgF8.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
+			
 			
 			
 		
