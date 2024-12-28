@@ -3217,19 +3217,23 @@
 			}
 			if(contador==1){
 				alert("Vc conseguiu esse nível\n atualize a página pra ir para o próximo nível");
+				var proximo=sessionStorage.getItem('nivel')+1;
+				sessionStorage.setItem('nivel',proximo);
 			}
 		}
 
-		var vazio=sessionStorage.getItem('nivel);
+		var vazio=sessionStorage.getItem('nivel');
 		if(vazio==null || vazio=="" || vazio=="null"){
 			sessionStorage.setItem('nivel',0);
 		}
-		var nivel=sessionStorage.getItem('nivel);
+		var nivel=sessionStorage.getItem('nivel');
 		function niveis(){
 			limpar();
 			if(nivel==1){
 				document.f.imgA1.src=amarelo;
-
+				document.f.imgA2.src=amarelo;
+				document.f.imgA5.src=amarelo;
+				document.f.imgA6.src=amarelo;
 			}
 		}
 		function limpar(){
@@ -3399,10 +3403,72 @@
 			if(imgF2==amarelo){
 				document.f.imgF2.src=buraco;
 			}
-			
-
-
-			
+			if(imgF3==amarelo){
+				document.f.imgF3.src=buraco;
+			}
+			if(imgF4==amarelo){
+				document.f.imgF4.src=buraco;
+			}
+			if(imgF5==amarelo){
+				document.f.imgF5.src=buraco;
+			}
+			if(imgF6==amarelo){
+				document.f.imgF6.src=buraco;
+			}
+			if(imgF7==amarelo){
+				document.f.imgF7.src=buraco;
+			}
+			if(imgF8==amarelo){
+				document.f.imgF8.src=buraco;
+			}
+			if(imgG1==amarelo){
+				document.f.imgG1.src=buraco;
+			}
+			if(imgG2==amarelo){
+				document.f.imgG2.src=buraco;
+			}
+			if(imgG3==amarelo){
+				document.f.imgG3.src=buraco;
+			}
+			if(imgG4==amarelo){
+				document.f.imgG4.src=buraco;
+			}
+			if(imgG5==amarelo){
+				document.f.imgG5.src=buraco;
+			}
+			if(imgG6==amarelo){
+				document.f.imgG6.src=buraco;
+			}
+			if(imgG7==amarelo){
+				document.f.imgG7.src=buraco;
+			}
+			if(imgG8==amarelo){
+				document.f.imgG8.src=buraco;
+			}
+			if(imgH1==amarelo){
+				document.f.imgH1.src=buraco;
+			}
+			if(imgH2==amarelo){
+				document.f.imgH2.src=buraco;
+			}
+			if(imgH3==amarelo){
+				document.f.imgH3.src=buraco;
+			}
+			if(imgH4==amarelo){
+				document.f.imgH4.src=buraco;
+			}
+			if(imgH5==amarelo){
+				document.f.imgH5.src=buraco;
+			}
+			if(imgH6==amarelo){
+				document.f.imgH6.src=buraco;
+			}
+			if(imgH7==amarelo){
+				document.f.imgH7.src=buraco;
+			}
+			if(imgH8==amarelo){
+				document.f.imgH8.src=buraco;
+			}
 		}
 
 
@@ -3410,7 +3476,9 @@
 		</script>
 	</head>
 	<body bgcolor="white">
-		<h2>Resta 1</h2>
+		<h2>Resta 1</h2>1 
+
+
 		<div id="buraco"><br><br></div>
 		<form name="f">
 			<button type="button" id="a1" name="a1" onclick="mover('a1')"><img name="imgA1" src="amarelo.png"></button>
