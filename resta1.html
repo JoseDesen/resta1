@@ -3224,7 +3224,6 @@
 		var nivel=0;
 		function niveis(){
 			limpar();
-			alert(nivel);
 			if(nivel==1){
 				document.f.imgA1.src=amarelo;
 				document.f.imgA2.src=amarelo;
@@ -3250,6 +3249,9 @@
 			if(nivel==4){
 				alert("parabéns por ter chegado até aqui...");
 			}	
+			var p=document.getElementById('painel');
+			p.innerHTML="<h2 id='painel'>Resta 1 - nivel "+nivel+"</h2>";
+			document.f.r.disabled=false;
 		}
 		function limpar(){
 			var imgA1=document.f.imgA1.src;
@@ -3491,7 +3493,7 @@
 		</script>
 	</head>
 	<body bgcolor="white">
-		<h2>Resta 1</h2>
+		<h2 id="painel">Resta 1</h2>
 		<div id="buraco"><br><br></div>
 		<form name="f">
 			<button type="button" id="a1" name="a1" onclick="mover('a1')"><img name="imgA1" src="buraco.png"></button>
@@ -3570,5 +3572,6 @@
 			<button type="button" id="h7" name="h7" onclick="mover('h7')"><img name="imgH7" src="buraco.png"></button>
 			<button type="button" id="h8" name="h8" onclick="mover('h8')"><img name="imgH8" src="buraco.png"></button>		
 		</form>
+		<button  type="button" onclick="niveis()" name="r" disabled><h3>Recomeçar o nível</h3></button>
 	</body>
 </html>
