@@ -3217,9 +3217,8 @@
 			}
 			if(contador==1){
 				alert("Vc conseguiu esse nível\n atualize a página pra ir para o próximo nível");
-				var proximo=sessionStorage.getItem('nivel')+1;
+				var proximo=parseInt(sessionStorage.getItem('nivel')+1);
 				sessionStorage.setItem('nivel',proximo);
-				alert(proximo);
 				niveis();
 			}
 		}
@@ -3229,15 +3228,36 @@
 			sessionStorage.setItem('nivel',0);
 		}
 		var nivel=sessionStorage.getItem('nivel');
-		alert(nivel);
 		function niveis(){
 			limpar();
 			if(nivel==1){
 				document.f.imgA1.src=amarelo;
 				document.f.imgA2.src=amarelo;
+				document.f.imgA4.src=amarelo;
+				document.f.imgA6.src=amarelo;
+				document.f.imgA8.src=amarelo;
+			}
+			if(nivel==2){
+				document.f.imgA1.src=amarelo;
+				document.f.imgA2.src=amarelo;
 				document.f.imgA5.src=amarelo;
 				document.f.imgA6.src=amarelo;
 			}
+			if(nivel==3){
+				document.f.imgA1.src=amarelo;
+				document.f.imgA2.src=amarelo;
+				document.f.imgA5.src=amarelo;
+				document.f.imgA6.src=amarelo;
+				document.f.imgB5.src=amarelo;
+				document.f.imgB6.src=amarelo;
+
+			}
+			if(nivel==4){
+				alert("parabéns por ter chegado até aqui...);
+			}
+
+
+			
 		}
 		function limpar(){
 			var imgA1=document.f.imgA1.src;
@@ -3480,7 +3500,6 @@
 	</head>
 	<body bgcolor="white">
 		<h2>Resta 1</h2>
-		teste
 
 
 		<div id="buraco"><br><br></div>
