@@ -2981,7 +2981,6 @@
 			}
 		}
 		function verificar(){
-			alert();
 			var contador=0;
 			var imgA1=document.f.imgA1.src;
 			var imgA2=document.f.imgA2.src;
@@ -3093,9 +3092,6 @@
 				contador=contador+1;
 			}
 			if(imgB8==amarelo){
-				contador=contador+1;
-			}
-			if(imgC1==amarelo){
 				contador=contador+1;
 			}
 			if(imgC1==amarelo){
@@ -3218,6 +3214,7 @@
 			if(imgH8==amarelo){
 				contador=contador+1;
 			}
+			alert(contador);
 			if(contador==1){
 				alert("Vc conseguiu esse nível\n atualize a página pra ir para o próximo nível");
 			}
