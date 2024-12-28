@@ -2980,8 +2980,9 @@
 				document.f.imgH8.src=buraco;
 			}
 		}
+		var contador=0;
 		function verificar(){
-			var contador=0;
+			contador=0;
 			var imgA1=document.f.imgA1.src;
 			var imgA2=document.f.imgA2.src;
 			var imgA3=document.f.imgA3.src;
@@ -3048,6 +3049,7 @@
 			var imgH8=document.f.imgH8.src;
 			if(imgA1==amarelo){
 				contador=contador+1;
+				alert("amarelo");
 			}
 			if(imgA2==amarelo){
 				contador=contador+1;
@@ -3163,7 +3165,7 @@
 			if(imgE7==amarelo){
 				contador=contador+1;
 			}
-			if(img8==amarelo){
+			if(imgE8==amarelo){
 				contador=contador+1;
 			}
 			if(imgF1==amarelo){
@@ -3226,7 +3228,7 @@
 		
 	</head>
 	<body bgcolor="white">
-		<h2>Resta 1</h2>
+		<h2>Resta 1t</h2>
 		<div id="buraco"><br><br></div>
 		<form name="f">
 			<button type="button" id="a1" name="a1" onclick="mover('a1')"><img name="imgA1" src="amarelo.png"></button>
