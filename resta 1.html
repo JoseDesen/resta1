@@ -2354,7 +2354,7 @@
 						receber="h7";
 					}
 				}
-				if(receber=="H5"){
+				if(receber=="h5"){
 					document.f.imgH5.src=buraco;
 					document.f.imgH6.src=buraco;
 					document.f.imgH7.src=amarelo;
@@ -2369,29 +2369,32 @@
 					ativar();
 				}
 			}
-
-
-
-
-
-
-
-
-
-			
-		
-
-
-			
-
-
-
-
-
-
-
-
-			
+			if(peca=="h8"){
+				if(receber=="" && imgH8==amarelo){
+					if(imgH7==amarelo && imgH6==buraco){
+						document.f.imgH6.src=verde;
+						receber="h8";
+					}
+					if(imgG8==amarelo && imgF8==buraco){
+						document.f.imgF8.src=verde;
+						receber="h8";
+					}
+				}
+				if(receber=="h6"){
+					document.f.imgH6.src=buraco;
+					document.f.imgH7.src=buraco;
+					document.f.imgH8.src=amarelo;
+					receber="";
+					ativar();
+				}
+				if(receber=="f8"){
+					document.f.imgF8.src=buraco;
+					document.f.imgG8.src=buraco;
+					document.f.imgH8.src=amarelo;
+					receber="";
+					ativar();
+				}
+			}
 			if(receber!=""){
 				desativar();
 			}
