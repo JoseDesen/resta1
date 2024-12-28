@@ -3217,36 +3217,28 @@
 			}
 			if(contador==1){
 				alert("Vc conseguiu esse nível");
-				var proximo=Math.floor(parseInt(sessionStorage.getItem('nivel'))+1);
-				sessionStorage.setItem('nivel',proximo);
+				nivel=Math.floor(nivel+1);
 				niveis();
 			}
 		}
-
-		var vazio=sessionStorage.getItem('nivel');
-		if(vazio==null || vazio=="" || vazio=="null"){
-			sessionStorage.setItem('nivel',0);
-		}
-		var nivel=parseInt(sessionStorage.getItem('nivel'));
-		
+		var nivel=0;
 		function niveis(){
 			limpar();
-			nivel=sessionStorage.getItem('nivel');
 			alert(nivel);
-			if(nivel=="1" || nivel==1){
+			if(nivel==1){
 				document.f.imgA1.src=amarelo;
 				document.f.imgA2.src=amarelo;
 				document.f.imgA4.src=amarelo;
 				document.f.imgA6.src=amarelo;
 				document.f.imgA8.src=amarelo;
 			}
-			if(nivel=="2" || nivel==2){
+			if(nivel==2){
 				document.f.imgA1.src=amarelo;
 				document.f.imgA2.src=amarelo;
 				document.f.imgA5.src=amarelo;
 				document.f.imgA6.src=amarelo;
 			}
-			if(nivel=="3" || nivel==3){
+			if(nivel==3){
 				document.f.imgA1.src=amarelo;
 				document.f.imgA2.src=amarelo;
 				document.f.imgA5.src=amarelo;
@@ -3255,12 +3247,9 @@
 				document.f.imgB4.src=amarelo;
 
 			}
-			if(nivel=="4" || nivel==4){
+			if(nivel==4){
 				alert("parabéns por ter chegado até aqui...");
 			}	
-		}
-		if(nivel!=0 || nivel!="0"){
-			niveis();
 		}
 		function limpar(){
 			var imgA1=document.f.imgA1.src;
@@ -3503,8 +3492,6 @@
 	</head>
 	<body bgcolor="white">
 		<h2>Resta 1</h2>
-
-
 		<div id="buraco"><br><br></div>
 		<form name="f">
 			<button type="button" id="a1" name="a1" onclick="mover('a1')"><img name="imgA1" src="buraco.png"></button>
